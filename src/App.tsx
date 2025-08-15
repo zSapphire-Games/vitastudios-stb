@@ -15,6 +15,7 @@ import {
   Award,
   Youtube,
 } from 'lucide-react';
+import React from 'react';
 
 function App() {
   const [scrollY, setScrollY] = useState(0);
@@ -94,7 +95,7 @@ function App() {
       description: 'Character and environment modeling',
       icon: <Code className="w-6 h-6" />,
       image:
-        'https://media.discordapp.net/attachments/1389057968086974594/1392196611504996377/swordy3.png?ex=686ea7a1&is=686d5621&hm=fe6fbaf9c86a35dde70f39caf2fd2a0b00a0871b34d347030cf5904d705b050e&=&format=webp&quality=lossless&width=2124&height=1194',
+        'https://i.ibb.co/YBtYbsdk/swordy3.webp',
       category: 'Technical',
       details: {
         tools: ['Blender', 'Maya', 'Substance Painter', 'Unreal Engine'],
@@ -135,7 +136,7 @@ function App() {
       description: 'Lore, narrative, and creative writing',
       icon: <FileText className="w-6 h-6" />,
       image:
-        'https://cdn.discordapp.com/attachments/1195290655526768700/1391847116472713399/HighresScreenshot00058.png?ex=686eb3a3&is=686d6223&hm=8ae49de4b7a99a1f20838abe8f7b2351fb95d14caddd88d70312baf20a2a9ef7',
+        'https://i.ibb.co/nMksHXbz/Highres-Screenshot00057.webp',
       category: 'Narrative',
       details: {
         tools: ['Unreal Engine', 'World Editing', 'Sculpting Systems', 'Gaea'],
@@ -182,24 +183,6 @@ function App() {
           'Proven ability to turn ambitious ideas into finished, engaging products through clear vision and leadership',
         ],
         location: 'United States',
-      },
-    },
-    {
-      name: 'Yakko',
-      role: 'Founder & Head of Game Development',
-      specialty: 'Programming & World Design',
-      image:
-        'https://g.acdn.no/obscura/API/dynamic/r1/ece5/tr_1200_1200_s_f/0000/nett/2024/8/27/15/NTB_tgmLWvUQseo%2B%25281%2529.jpg?chk=DC4BE4',
-      country: 'IL', // Israel
-      tier: 'founder',
-      cv: {
-        experience: '3+ years in Game Development',
-        skills: ['Unreal Engine', 'Game Design', 'Programming', 'VFX Artist'],
-        achievements: [
-          'Founded Vita Studios',
-          'Lead Developer for multiple projects',
-        ],
-        location: 'Israel',
       },
     },
     {
@@ -343,29 +326,6 @@ function App() {
       },
     },
     {
-      name: 'Duvster',
-      role: 'Comunity Moderator',
-      specialty: 'Community Management & Writing',
-      image:
-        'https://cdn.discordapp.com/avatars/899784834216525874/1c018b74accb91179c550f03820a41d4.webp?size=240',
-      country: 'AU', // Australia
-      tier: 'developer',
-      cv: {
-        experience: '2+ years in Community Management',
-        skills: [
-          'Communication',
-          'Writing Skills',
-          'Desire to Help',
-          'Good Problem Solving',
-        ],
-        achievements: [
-          'Administrated ISTF for 2+ years',
-          'Completed a Masters Degree in Literature',
-        ],
-        location: 'Australia',
-      },
-    },
-    {
       name: 'Breadley',
       role: 'Graphics Designer',
       specialty: 'Video Editing & Writing',
@@ -437,7 +397,7 @@ function App() {
     (member) => member.tier === 'unknown'
   );
   return (
-    <div className="min-h-screen bg-black text-white overflow-x-hidden font-exo">
+    <div className="min-h-screen bg-black text-white overflow-x-hidden font-commissioner">
       {/* Enhanced Animated Background */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
         {/* Deep space gradient */}
@@ -487,10 +447,10 @@ function App() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-black/30 backdrop-blur-md border-b border-cyan-500/20">
         <div className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
-            <span className="text-xl font-bold font-orbitron bg-gradient-to-r from-cyan-400 to-violet-400 bg-clip-text text-transparent text-glow">
+            <span className="text-xl font-bold font-commissioner bg-gradient-to-r from-cyan-400 to-violet-400 bg-clip-text text-transparent text-glow">
               VITA STUDIOS
             </span>
-            <div className="hidden md:flex items-center space-x-8 font-exo">
+            <div className="hidden md:flex items-center space-x-8 font-commissioner">
               <a
                 href="#home"
                 className="hover:text-cyan-400 transition-all duration-300 hover:text-glow"
@@ -541,21 +501,21 @@ function App() {
         ></div>
 
         <div className="relative z-10 text-center max-w-5xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 font-orbitron bg-gradient-to-r from-cyan-300 via-violet-300 to-pink-300 bg-clip-text text-transparent text-glow leading-tight">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 font-commissioner bg-gradient-to-r from-cyan-300 via-violet-300 to-pink-300 bg-clip-text text-transparent text-glow leading-tight">
             Welcome to
             <br />
             VITA STUDIOS
           </h1>
-          <p className="text-lg md:text-xl mb-8 text-gray-200 leading-relaxed font-exo font-light max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl mb-8 text-gray-200 leading-relaxed font-commissioner font-light max-w-3xl mx-auto">
             An independent game studio crafting bold, story-driven experiences
             that explore the extraordinary in the everyday.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="group px-8 py-3 bg-gradient-to-r from-cyan-500 to-violet-500 rounded-full font-semibold font-exo hover:from-cyan-400 hover:to-violet-400 transform hover:scale-105 transition-all duration-300 flex items-center justify-center space-x-2 holographic-card animate-float">
+            <button className="group px-8 py-3 bg-gradient-to-r from-cyan-500 to-violet-500 rounded-full font-semibold font-commissioner hover:from-cyan-400 hover:to-violet-400 transform hover:scale-105 transition-all duration-300 flex items-center justify-center space-x-2 holographic-card animate-float">
               <Play className="w-5 h-5 group-hover:animate-pulse" />
               <span>VIEW OUR WORK</span>
             </button>
-            <button className="group px-8 py-3 border-2 border-cyan-400/50 rounded-full font-semibold font-exo hover:bg-cyan-400/10 hover:border-cyan-400 transition-all duration-300 flex items-center justify-center space-x-2 holographic-card animate-float-reverse">
+            <button className="group px-8 py-3 border-2 border-cyan-400/50 rounded-full font-semibold font-commissioner hover:bg-cyan-400/10 hover:border-cyan-400 transition-all duration-300 flex items-center justify-center space-x-2 holographic-card animate-float-reverse">
               <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               <span>LEARN MORE</span>
             </button>
@@ -567,10 +527,10 @@ function App() {
       <section id="portfolio" className="py-16 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-6 font-orbitron bg-gradient-to-r from-cyan-400 to-violet-400 bg-clip-text text-transparent text-glow relative z-10">
+            <h2 className="text-3xl font-bold mb-6 font-commissioner bg-gradient-to-r from-cyan-400 to-violet-400 bg-clip-text text-transparent text-glow relative z-10">
               OUR PORTFOLIO
             </h2>
-            <p className="text-gray-300 max-w-2xl mx-auto font-exo font-light leading-relaxed relative z-10">
+            <p className="text-gray-300 max-w-2xl mx-auto font-commissioner font-light leading-relaxed relative z-10">
               Discover the diverse talents and creative disciplines that bring
               our vision to life.
             </p>
@@ -596,14 +556,14 @@ function App() {
                     <div className="p-3 bg-gradient-to-r from-cyan-500 to-violet-500 rounded-xl">
                       {item.icon}
                     </div>
-                    <span className="text-sm text-cyan-400 font-semibold font-orbitron tracking-wider">
+                    <span className="text-sm text-cyan-400 font-semibold font-commissioner tracking-wider">
                       {item.category}
                     </span>
                   </div>
-                  <h3 className="text-xl font-bold mb-3 font-orbitron text-glow">
+                  <h3 className="text-xl font-bold mb-3 font-commissioner text-glow">
                     {item.title}
                   </h3>
-                  <p className="text-gray-400 font-exo font-light leading-relaxed">
+                  <p className="text-gray-400 font-commissioner font-light leading-relaxed">
                     {item.description}
                   </p>
                 </div>
@@ -627,7 +587,7 @@ function App() {
               <div className="flex items-center justify-between mb-3 pb-2 border-b border-cyan-400/30">
                 <div className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></div>
-                  <span className="text-xs font-orbitron text-cyan-400 tracking-wider">
+                  <span className="text-xs font-commissioner text-cyan-400 tracking-wider">
                     PROJECT FILE
                   </span>
                 </div>
@@ -638,10 +598,10 @@ function App() {
 
               {/* Project name and category */}
               <div className="mb-3">
-                <h4 className="text-sm font-bold font-orbitron text-white text-glow mb-1">
+                <h4 className="text-sm font-bold font-commissioner text-white text-glow mb-1">
                   {portfolioItems[hoveredPortfolio].title}
                 </h4>
-                <p className="text-xs text-cyan-400 font-exo">
+                <p className="text-xs text-cyan-400 font-commissioner">
                   {portfolioItems[hoveredPortfolio].category}
                 </p>
               </div>
@@ -652,11 +612,11 @@ function App() {
                   <div className="w-3 h-3 text-cyan-400">
                     <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
                   </div>
-                  <span className="text-xs font-orbitron text-cyan-400 tracking-wide">
+                  <span className="text-xs font-commissioner text-cyan-400 tracking-wide">
                     STATUS
                   </span>
                 </div>
-                <p className="text-xs text-gray-300 font-exo pl-5">
+                <p className="text-xs text-gray-300 font-commissioner pl-5">
                   {portfolioItems[hoveredPortfolio].details.status}
                 </p>
               </div>
@@ -665,7 +625,7 @@ function App() {
               <div className="mb-3">
                 <div className="flex items-center space-x-2 mb-1">
                   <Code className="w-3 h-3 text-cyan-400" />
-                  <span className="text-xs font-orbitron text-cyan-400 tracking-wide">
+                  <span className="text-xs font-commissioner text-cyan-400 tracking-wide">
                     TOOLS
                   </span>
                 </div>
@@ -677,7 +637,7 @@ function App() {
                         className="flex items-center space-x-2"
                       >
                         <div className="w-1 h-1 bg-cyan-400 rounded-full"></div>
-                        <span className="text-xs text-gray-300 font-exo">
+                        <span className="text-xs text-gray-300 font-commissioner">
                           {tool}
                         </span>
                       </div>
@@ -690,7 +650,7 @@ function App() {
               <div className="mb-3">
                 <div className="flex items-center space-x-2 mb-1">
                   <FileText className="w-3 h-3 text-cyan-400" />
-                  <span className="text-xs font-orbitron text-cyan-400 tracking-wide">
+                  <span className="text-xs font-commissioner text-cyan-400 tracking-wide">
                     PROJECTS
                   </span>
                 </div>
@@ -702,7 +662,7 @@ function App() {
                         className="flex items-center space-x-2"
                       >
                         <div className="w-1 h-1 bg-violet-400 rounded-full"></div>
-                        <span className="text-xs text-gray-300 font-exo">
+                        <span className="text-xs text-gray-300 font-commissioner">
                           {project}
                         </span>
                       </div>
@@ -715,10 +675,10 @@ function App() {
               <div className="pt-2 border-t border-cyan-400/30">
                 <div className="flex items-center space-x-2">
                   <Users className="w-3 h-3 text-cyan-400" />
-                  <span className="text-xs font-orbitron text-cyan-400 tracking-wide">
+                  <span className="text-xs font-commissioner text-cyan-400 tracking-wide">
                     LEAD
                   </span>
-                  <span className="text-xs text-gray-300 font-exo ml-auto">
+                  <span className="text-xs text-gray-300 font-commissioner ml-auto">
                     {portfolioItems[hoveredPortfolio].details.lead}
                   </span>
                 </div>
@@ -750,10 +710,10 @@ function App() {
       <section id="game" className="py-16 px-6 relative">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold mb-6 font-orbitron bg-gradient-to-r from-cyan-400 to-violet-400 bg-clip-text text-transparent text-glow relative z-10">
+            <h2 className="text-3xl font-bold mb-6 font-commissioner bg-gradient-to-r from-cyan-400 to-violet-400 bg-clip-text text-transparent text-glow relative z-10">
               OUR GAMES
             </h2>
-            <p className="text-gray-300 max-w-2xl mx-auto font-exo font-light leading-relaxed relative z-10">
+            <p className="text-gray-300 max-w-2xl mx-auto font-commissioner font-light leading-relaxed relative z-10">
               Immersive experiences that blend stunning visuals with emotional
               depth and compelling narratives.
             </p>
@@ -762,13 +722,13 @@ function App() {
           {/* A Better Tomorrow */}
           <div className="mb-20">
             <div className="text-center mb-12">
-              <div className="inline-block px-6 py-3 bg-gradient-to-r from-cyan-500 to-violet-500 rounded-full text-sm font-bold font-orbitron mb-6 animate-pulse-glow">
+              <div className="inline-block px-6 py-3 bg-gradient-to-r from-cyan-500 to-violet-500 rounded-full text-sm font-bold font-commissioner mb-6 animate-pulse-glow">
                 COMING SOON
               </div>
-              <h3 className="text-4xl font-bold mb-6 font-orbitron bg-gradient-to-r from-cyan-300 to-violet-300 bg-clip-text text-transparent text-glow">
+              <h3 className="text-4xl font-bold mb-6 font-commissioner bg-gradient-to-r from-cyan-300 to-violet-300 bg-clip-text text-transparent text-glow">
                 A BETTER TOMORROW
               </h3>
-              <p className="text-gray-300 max-w-3xl mx-auto leading-relaxed font-exo font-light">
+              <p className="text-gray-300 max-w-3xl mx-auto leading-relaxed font-commissioner font-light">
                 A cinematic open-world superhero adventure about legacy,
                 purpose, and cosmic power. Experience an immersive narrative
                 that blends stunning visuals with emotional depth.
@@ -783,11 +743,11 @@ function App() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
                 <div className="absolute bottom-10 left-10 right-10">
-                  <blockquote className="text-xl font-light italic text-white mb-4 font-exo text-glow">
+                  <blockquote className="text-xl font-light italic text-white mb-4 font-commissioner text-glow">
                     "The universe doesn't make heroes. We choose to become
                     them."
                   </blockquote>
-                  <p className="text-cyan-400 font-orbitron font-semibold">
+                  <p className="text-cyan-400 font-commissioner font-semibold">
                     — From the script of A Better Tomorrow
                   </p>
                 </div>
@@ -799,13 +759,13 @@ function App() {
           <div className="grid md:grid-cols-2 gap-8">
             <div>
               <div className="text-center mb-12">
-                <div className="inline-block px-6 py-3 bg-gradient-to-r from-red-500 to-yellow-500 rounded-full text-sm font-bold font-orbitron mb-6 animate-pulse-glow">
+                <div className="inline-block px-6 py-3 bg-gradient-to-r from-red-500 to-yellow-500 rounded-full text-sm font-bold font-commissioner mb-6 animate-pulse-glow">
                   PREV. DEVELOPMENT
                 </div>
-                <h3 className="text-3xl font-bold mb-6 font-orbitron bg-gradient-to-r from-red-300 via-yellow-300 to-orange-300 bg-clip-text text-transparent text-glow">
+                <h3 className="text-3xl font-bold mb-6 font-commissioner bg-gradient-to-r from-red-300 via-yellow-300 to-orange-300 bg-clip-text text-transparent text-glow">
                   IntoTheSpeedForce
                 </h3>
-                <p className="text-gray-300 max-w-3xl mx-auto leading-relaxed font-exo font-light">
+                <p className="text-gray-300 max-w-3xl mx-auto leading-relaxed font-commissioner font-light">
                   The Flash game made by fans, for fans. Experience the Speed
                   Force like never before in this high-octane adventure
                   celebrating the Scarlet Speedster's legacy.
@@ -823,10 +783,10 @@ function App() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
                   <div className="absolute bottom-10 left-10 right-10">
-                    <blockquote className="text-xl font-light italic text-white mb-4 font-exo text-glow">
+                    <blockquote className="text-xl font-light italic text-white mb-4 font-commissioner text-glow">
                       "My name is Barry Allen, and I am the fastest man alive."
                     </blockquote>
-                    <p className="text-yellow-400 font-orbitron font-semibold">
+                    <p className="text-yellow-400 font-commissioner font-semibold">
                       — The Flash
                     </p>
                   </div>
@@ -837,13 +797,13 @@ function App() {
             {/* Placeholder Game */}
             <div>
               <div className="text-center mb-12">
-                <div className="inline-block px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full text-sm font-bold font-orbitron mb-6 animate-pulse-glow">
+                <div className="inline-block px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full text-sm font-bold font-commissioner mb-6 animate-pulse-glow">
                   IN DEVELOPMENT
                 </div>
-                <h3 className="text-3xl font-bold mb-6 font-orbitron bg-gradient-to-r from-purple-300 via-pink-300 to-violet-300 bg-clip-text text-transparent text-glow">
+                <h3 className="text-3xl font-bold mb-6 font-commissioner bg-gradient-to-r from-purple-300 via-pink-300 to-violet-300 bg-clip-text text-transparent text-glow">
                   Project Nexus
                 </h3>
-                <p className="text-gray-300 max-w-3xl mx-auto leading-relaxed font-exo font-light">
+                <p className="text-gray-300 max-w-3xl mx-auto leading-relaxed font-commissioner font-light">
                   An ambitious new project pushing the boundaries of interactive
                   storytelling. More details coming soon as we craft something
                   truly extraordinary.
@@ -859,10 +819,10 @@ function App() {
                       <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full flex items-center justify-center">
                         <Star className="w-8 h-8 text-white animate-pulse" />
                       </div>
-                      <p className="text-white font-orbitron text-lg font-bold text-glow">
+                      <p className="text-white font-commissioner text-lg font-bold text-glow">
                         CLASSIFIED
                       </p>
-                      <p className="text-purple-300 font-exo text-sm mt-2"></p>
+                      <p className="text-purple-300 font-commissioner text-sm mt-2"></p>
                     </div>
                   </div>
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
@@ -878,13 +838,13 @@ function App() {
         <div className="absolute inset-0 bg-gradient-to-r from-violet-950/30 to-blue-950/30"></div>
         <div className="max-w-5xl mx-auto relative z-10">
           <div className="text-center mb-12">
-            <div className="inline-block px-6 py-3 bg-gradient-to-r from-cyan-500 to-violet-500 rounded-full text-sm font-bold font-orbitron mb-6 animate-pulse-glow">
+            <div className="inline-block px-6 py-3 bg-gradient-to-r from-cyan-500 to-violet-500 rounded-full text-sm font-bold font-commissioner mb-6 animate-pulse-glow">
               Coming Soon
             </div>
-            <h2 className="text-4xl font-bold mb-6 font-orbitron bg-gradient-to-r from-cyan-300 to-violet-300 bg-clip-text text-transparent text-glow">
+            <h2 className="text-4xl font-bold mb-6 font-commissioner bg-gradient-to-r from-cyan-300 to-violet-300 bg-clip-text text-transparent text-glow">
               A Better Tomorrow
             </h2>
-            <p className="text-gray-300 max-w-3xl mx-auto leading-relaxed font-exo font-light">
+            <p className="text-gray-300 max-w-3xl mx-auto leading-relaxed font-commissioner font-light">
               A cinematic open-world superhero adventure about legacy, purpose,
               and cosmic power. Experience an immersive narrative that blends
               stunning visuals with emotional depth.
@@ -899,10 +859,10 @@ function App() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
               <div className="absolute bottom-10 left-10 right-10">
-                <blockquote className="text-xl font-light italic text-white mb-4 font-exo text-glow">
+                <blockquote className="text-xl font-light italic text-white mb-4 font-commissioner text-glow">
                   "The universe doesn't make heroes. We choose to become them."
                 </blockquote>
-                <p className="text-cyan-400 font-orbitron font-semibold">
+                <p className="text-cyan-400 font-commissioner font-semibold">
                   — From the script of A Better Tomorrow
                 </p>
               </div>
@@ -915,10 +875,10 @@ function App() {
       <section id="team" className="py-16 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-6 font-orbitron bg-gradient-to-r from-cyan-400 to-violet-400 bg-clip-text text-transparent text-glow relative z-10">
+            <h2 className="text-3xl font-bold mb-6 font-commissioner bg-gradient-to-r from-cyan-400 to-violet-400 bg-clip-text text-transparent text-glow relative z-10">
               MEET THE TEAM
             </h2>
-            <p className="text-gray-300 max-w-2xl mx-auto font-exo font-light leading-relaxed relative z-10">
+            <p className="text-gray-300 max-w-2xl mx-auto font-commissioner font-light leading-relaxed relative z-10">
               The creative minds behind Vita Studios, united by passion and
               vision.
             </p>
@@ -927,7 +887,7 @@ function App() {
           {/* Founders Section */}
           <div className="mb-16">
             <div className="text-center mb-8">
-              <h3 className="text-gray-300 max-w-2xl mx-auto font-exo font-light leading-relaxed relative z-10">
+              <h3 className="text-gray-300 max-w-2xl mx-auto font-commissioner font-light leading-relaxed relative z-10">
                 FOUNDERS
               </h3>
               <div className="w-24 h-1 bg-gradient-to-r from-yellow-400 to-orange-400 mx-auto rounded-full"></div>
@@ -960,13 +920,13 @@ function App() {
                       />
                     </div>
                   </div>
-                  <h3 className="text-xl font-bold mb-2 font-orbitron text-glow">
+                  <h3 className="text-xl font-bold mb-2 font-commissioner text-glow">
                     {member.name}
                   </h3>
-                  <p className="text-yellow-400 font-semibold mb-2 font-exo">
+                  <p className="text-yellow-400 font-semibold mb-2 font-commissioner">
                     {member.role}
                   </p>
-                  <p className="text-gray-400 text-sm font-exo font-light">
+                  <p className="text-gray-400 text-sm font-commissioner font-light">
                     {member.specialty}
                   </p>
                 </div>
@@ -977,7 +937,7 @@ function App() {
           {/* Developers Section */}
           <div className="mb-16">
             <div className="text-center mb-8">
-              <h3 className="text-gray-300 max-w-2xl mx-auto font-exo font-light leading-relaxed relative z-10">
+              <h3 className="text-gray-300 max-w-2xl mx-auto font-commissioner font-light leading-relaxed relative z-10">
                 DEVELOPERS
               </h3>
               <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-violet-400 mx-auto rounded-full"></div>
@@ -1010,13 +970,13 @@ function App() {
                       />
                     </div>
                   </div>
-                  <h3 className="text-xl font-bold mb-2 font-orbitron text-glow">
+                  <h3 className="text-xl font-bold mb-2 font-commissioner text-glow">
                     {member.name}
                   </h3>
-                  <p className="text-cyan-400 font-semibold mb-2 font-exo">
+                  <p className="text-cyan-400 font-semibold mb-2 font-commissioner">
                     {member.role}
                   </p>
-                  <p className="text-gray-400 text-sm font-exo font-light">
+                  <p className="text-gray-400 text-sm font-commissioner font-light">
                     {member.specialty}
                   </p>
                 </div>
@@ -1027,7 +987,7 @@ function App() {
           {/* Unknown Members Section */}
           <div>
             <div className="text-center mb-8">
-              <h3 className="text-gray-300 max-w-2xl mx-auto font-exo font-light leading-relaxed relative z-10">
+              <h3 className="text-gray-300 max-w-2xl mx-auto font-commissioner font-light leading-relaxed relative z-10">
                 UNKNOWN
               </h3>
               <div className="w-24 h-1 bg-gradient-to-r from-gray-400 to-gray-600 mx-auto rounded-full"></div>
@@ -1060,13 +1020,13 @@ function App() {
                       />
                     </div>
                   </div>
-                  <h3 className="text-xl font-bold mb-2 font-orbitron text-glow">
+                  <h3 className="text-xl font-bold mb-2 font-commissioner text-glow">
                     {member.name}
                   </h3>
-                  <p className="text-gray-500 font-semibold mb-2 font-exo">
+                  <p className="text-gray-500 font-semibold mb-2 font-commissioner">
                     {member.role}
                   </p>
-                  <p className="text-gray-500 text-sm font-exo font-light">
+                  <p className="text-gray-500 text-sm font-commissioner font-light">
                     {member.specialty}
                   </p>
                 </div>
@@ -1090,7 +1050,7 @@ function App() {
               <div className="flex items-center justify-between mb-3 pb-2 border-b border-cyan-400/30">
                 <div className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></div>
-                  <span className="text-xs font-orbitron text-cyan-400 tracking-wider">
+                  <span className="text-xs font-commissioner text-cyan-400 tracking-wider">
                     PERSONNEL FILE
                   </span>
                 </div>
@@ -1101,10 +1061,10 @@ function App() {
 
               {/* Name and role */}
               <div className="mb-3">
-                <h4 className="text-sm font-bold font-orbitron text-white text-glow mb-1">
+                <h4 className="text-sm font-bold font-commissioner text-white text-glow mb-1">
                   {teamMembers[hoveredMember].name}
                 </h4>
-                <p className="text-xs text-cyan-400 font-exo">
+                <p className="text-xs text-cyan-400 font-commissioner">
                   {teamMembers[hoveredMember].role}
                 </p>
               </div>
@@ -1113,11 +1073,11 @@ function App() {
               <div className="mb-3">
                 <div className="flex items-center space-x-2 mb-1">
                   <Calendar className="w-3 h-3 text-cyan-400" />
-                  <span className="text-xs font-orbitron text-cyan-400 tracking-wide">
+                  <span className="text-xs font-commissioner text-cyan-400 tracking-wide">
                     EXPERIENCE
                   </span>
                 </div>
-                <p className="text-xs text-gray-300 font-exo pl-5">
+                <p className="text-xs text-gray-300 font-commissioner pl-5">
                   {teamMembers[hoveredMember].cv.experience}
                 </p>
               </div>
@@ -1126,7 +1086,7 @@ function App() {
               <div className="mb-3">
                 <div className="flex items-center space-x-2 mb-1">
                   <Code className="w-3 h-3 text-cyan-400" />
-                  <span className="text-xs font-orbitron text-cyan-400 tracking-wide">
+                  <span className="text-xs font-commissioner text-cyan-400 tracking-wide">
                     SKILLS
                   </span>
                 </div>
@@ -1138,7 +1098,7 @@ function App() {
                         className="flex items-center space-x-2"
                       >
                         <div className="w-1 h-1 bg-cyan-400 rounded-full"></div>
-                        <span className="text-xs text-gray-300 font-exo">
+                        <span className="text-xs text-gray-300 font-commissioner">
                           {skill}
                         </span>
                       </div>
@@ -1151,7 +1111,7 @@ function App() {
               <div className="mb-3">
                 <div className="flex items-center space-x-2 mb-1">
                   <Award className="w-3 h-3 text-cyan-400" />
-                  <span className="text-xs font-orbitron text-cyan-400 tracking-wide">
+                  <span className="text-xs font-commissioner text-cyan-400 tracking-wide">
                     ACHIEVEMENTS
                   </span>
                 </div>
@@ -1163,7 +1123,7 @@ function App() {
                         className="flex items-center space-x-2"
                       >
                         <div className="w-1 h-1 bg-violet-400 rounded-full"></div>
-                        <span className="text-xs text-gray-300 font-exo">
+                        <span className="text-xs text-gray-300 font-commissioner">
                           {achievement}
                         </span>
                       </div>
@@ -1176,10 +1136,10 @@ function App() {
               <div className="pt-2 border-t border-cyan-400/30">
                 <div className="flex items-center space-x-2">
                   <MapPin className="w-3 h-3 text-cyan-400" />
-                  <span className="text-xs font-orbitron text-cyan-400 tracking-wide">
+                  <span className="text-xs font-commissioner text-cyan-400 tracking-wide">
                     LOCATION
                   </span>
-                  <span className="text-xs text-gray-300 font-exo ml-auto">
+                  <span className="text-xs text-gray-300 font-commissioner ml-auto">
                     {teamMembers[hoveredMember].cv.location}
                   </span>
                 </div>
@@ -1211,10 +1171,10 @@ function App() {
       <section id="contact" className="py-16 px-6 relative">
         <div className="absolute inset-0 bg-gradient-to-r from-violet-950/30 to-blue-950/30"></div>
         <div className="max-w-4xl mx-auto text-center relative z-10">
-          <h2 className="text-3xl font-bold mb-6 font-orbitron bg-gradient-to-r from-cyan-400 to-violet-400 bg-clip-text text-transparent text-glow">
+          <h2 className="text-3xl font-bold mb-6 font-commissioner bg-gradient-to-r from-cyan-400 to-violet-400 bg-clip-text text-transparent text-glow">
             FORWARD. VITA. TOGETHER.
           </h2>
-          <p className="text-gray-300 mb-8 max-w-2xl mx-auto font-exo font-light leading-relaxed">
+          <p className="text-gray-300 mb-8 max-w-2xl mx-auto font-commissioner font-light leading-relaxed">
             Ready to join our journey? Connect with us and be part of something
             extraordinary.
           </p>
@@ -1248,11 +1208,11 @@ function App() {
         <div className="max-w-7xl mx-auto text-center">
           <div className="flex items-center justify-center space-x-3 mb-6">
             <Star className="w-8 h-8 text-white" />
-            <span className="text-2xl font-bold font-orbitron">
+            <span className="text-2xl font-bold font-commissioner">
               VITA STUDIOS
             </span>
           </div>
-          <p className="text-sm font-light font-exo">
+          <p className="text-sm font-light font-commissioner">
             © 2025 Vita Game Studios. All rights reserved. Crafting the future
             of interactive storytelling.
           </p>
