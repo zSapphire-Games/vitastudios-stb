@@ -128,7 +128,7 @@ function App() {
         tools: ['Unreal Engine', 'C++', 'Python', '& more...'],
         projects: ['Core Systems', 'Gameplay Mechanics'],
         status: 'Development',
-        lead: 'Yakko & Nick Kiafas',
+        lead: 'Sapphire & Nick Kiafas',
       },
     },
     {
@@ -142,7 +142,7 @@ function App() {
         tools: ['Unreal Engine', 'World Editing', 'Sculpting Systems', 'Gaea'],
         projects: ['Universe Bible', 'Character Backstories'],
         status: 'Expanding',
-        lead: 'Yakko & Aaron',
+        lead: 'Sapphire & Aaron',
       },
     },
     {
